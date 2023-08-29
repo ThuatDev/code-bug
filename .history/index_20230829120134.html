@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .onhover {
+        margin-top: 100px;
+      }
+      .sec-3-col {
+        width: 33.3%;
+        height: 300px;
+
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s ease;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        overflow-x: auto;
+      }
+
+      .onhover {
+        display: flex;
+      }
+
+      .sec-3-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .sec-3-col img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .onhover .sec-3-col.active {
+        max-width: 30%;
+        flex-basis: 40%;
+      }
+
+      .onhover .sec-3-col:not(.active) {
+        max-width: 30%;
+        flex-basis: 30%;
+      }
+
+      .onhover .sec-3-col:hover {
+        max-width: 40%;
+        flex-basis: 40%;
+      }
+      .image-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px;
+
+        transition: all 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="onhover">
+      <div class="sec-3-col active">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690921287957-016981122c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          alt="Image 1"
+        />
+        <div class="image-overlay">
+          <span>CÔNG TRÌNH THIẾT KẾ BIỆT THỰ</span>
+        </div>
+      </div>
+
+      <div class="sec-3-col">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690921287957-016981122c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          alt="Image 2"
+        />
+        <div class="image-overlay">
+          <span>KIẾN TRÚC THIẾT KẾ NHÀ PHỐ</span>
+        </div>
+      </div>
+
+      <div class="sec-3-col">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690921287957-016981122c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          alt="Image 3"
+        />
+
+        <div class="image-overlay">
+          <span>NỘI THẤT THIẾT KẾ NỘI THẤT</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
